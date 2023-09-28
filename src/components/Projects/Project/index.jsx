@@ -11,7 +11,7 @@ const Project = (props) => {
         <h1>Description</h1>
         <p>
           {disc}
-          <a href="#">demo</a>
+          <a href="https://haseeb-hellodoc-project.netlify.app/">demo</a>
         </p>
       </div>
     </StyledContainer>

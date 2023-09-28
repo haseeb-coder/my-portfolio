@@ -2,10 +2,30 @@ import React from "react";
 import Slider from "react-slick";
 import Project from "../Project";
 
-import drapp from "../../../../images/drapp.png";
 let data = [
   {
-    img: { drapp },
+    img: "../../../../images/drapp.png",
+    disc: "my first project",
+  },
+
+  {
+    img: "../../../../images/drapp.png",
+    disc: "my first project",
+  },
+  {
+    img: "../../../../images/drapp.png",
+    disc: "my first project",
+  },
+  {
+    img: "../../../../images/drapp.png",
+    disc: "my first project",
+  },
+  {
+    img: "../../../../images/drapp.png",
+    disc: "my first project",
+  },
+  {
+    img: "../../../../images/drapp.png",
     disc: "my first project",
   },
 ];
@@ -47,11 +67,7 @@ var settings = {
 const SliderComponent = () => {
   let sliderProject = "";
   sliderProject = data.map((item, i) => <Project item={item} key={i} />);
-  return (
-    <Slider {...settings}>
-      {sliderProject}
-    </Slider>
-  );
+  return <Slider {...settings}>{sliderProject}</Slider>;
 };
 
 export default SliderComponent;
