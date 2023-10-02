@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const StyledContainer = styled.div`
-  height: 10rem;
+  height: 15rem;
   background-color: #4e5156;
-  margin: 0 0.5rem;
-  padding: 0.5rem;
-  border-radius: 5px;
+  margin: 0 0.7rem;
+  padding: 0.7rem;
+  border-radius: 6px;
   cursor: pointer;
   position: relative;
   overflow: hidden;

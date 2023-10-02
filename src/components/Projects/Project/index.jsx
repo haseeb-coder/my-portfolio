@@ -5,7 +5,7 @@ import { StyledContainer } from "./style";
 const Project = (props) => {
   const { img, disc } = props.item;
   return (
-    <StyledContainer>
+    <StyledContainer className="project">
       <img src={img} alt="project" />
       <div className="disc">
         <h1>Description</h1>

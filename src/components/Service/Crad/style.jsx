@@ -8,9 +8,9 @@ export const StyledContainer = styled.div`
   cursor: pointer;
   .content {
     font-size: 0.8rem;
-    transition: transform 0.4s ease-in-out; // Apply transition to the entire card
+    transition: transform 0.4s ease-in-out; /* Apply transition to the entire card */
     &:hover {
-      transform: rotatez(360deg); // Flip the entire card upward on hover
+      transform: scale(1.2); 
     }
   }
   span {

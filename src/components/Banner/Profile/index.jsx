@@ -1,9 +1,10 @@
 import React from "react";
 
-import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineInstagram,AiOutlineGithub } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
-import myImage from "../../../../images/myImage.png";
+
+import myImage from "../../../../assets/images/myImage.png";
 
 import {StyleContainer,Texts,Social,Profile} from "./style"
 const ProfileComponent = () => {
@@ -31,8 +32,13 @@ const ProfileComponent = () => {
               </a>
             </span>
             <span>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/haseeb-ur-rehman-siddique-b92542173">
                 <FaLinkedinIn />
+              </a>
+            </span>
+            <span>
+              <a href="https://github.com/haseeb-coder">
+                <AiOutlineGithub />
               </a>
             </span>
           </div>
