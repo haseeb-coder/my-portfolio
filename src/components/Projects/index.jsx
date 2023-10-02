@@ -8,14 +8,13 @@ const Projects = () => {
       <h1>
         Recent <span className="green"> Projects</span>
       </h1>
-      <p>I have compeleted  a lot of projects</p>
+      <p>I have compeleted a lot of projects</p>
 
       <Slide>
-        <SliderComponent/>
+        <SliderComponent />
       </Slide>
     </StyledContainer>
   );
 };
 
 export default Projects;
-

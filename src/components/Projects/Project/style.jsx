@@ -33,7 +33,7 @@ export const StyledContainer = styled.div`
       font-size: 0.8rem;
       a {
         margin-left: 0.4rem;
-        color: darkblue;
+        color: #001AF9;
       }
     }
   }

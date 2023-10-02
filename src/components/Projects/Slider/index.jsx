@@ -4,29 +4,37 @@ import Project from "../Project";
 import drapp from "../../../../assets/images/drapp.png";
 import drapp_01 from "../../../../assets/images/drapp_01.png";
 import drapp_02 from "../../../../assets/images/drapp_02.png";
+import eventzero from "../../../../assets/images/eventzero.png";
+import eventzero2 from "../../../../assets/images/eventzero2.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { StyledContainer, Buttons } from "./style";
 
 let data = [
   {
     img: drapp,
-    disc: "my first project",
+    disc: "Online book your dr and meet at the Clinic or online",
+    link: "https://haseeb-hellodoc-project.netlify.app/",
   },
   {
     img: drapp_01,
-    disc: "my second project",
+    disc: "Book your appointment before it's to late book know",
+    link: "https://haseeb-hellodoc-project.netlify.app/",
+  },
+  {
+    img: eventzero,
+    disc: "Organize your event to reduce Carbon Emissions",
+    link: "https://eventzero.io/",
   },
   {
     img: drapp_02,
-    disc: "my third project",
+    disc: "Online Book your Dr and take appointements",
+    link: "https://haseeb-hellodoc-project.netlify.app/",
   },
+
   {
-    img: drapp,
-    disc: "my fourth project",
-  },
-  {
-    img: drapp,
-    disc: "my fifth project",
+    img: eventzero2,
+    disc: "Carbon free envoirmnemnt",
+    link: "https://eventzero.io/",
   },
 ];
 
@@ -73,11 +81,11 @@ var settings = {
 
 const SliderComponent = () => {
   const arrowRef = useRef(null);
-  let sliderProject = data.map((item, i) => <Project item={item} key={i} />);
+  let sliderProjects = data.map((item, i) => <Project item={item} key={i} />);
   return (
     <StyledContainer>
       <Slider ref={arrowRef} {...settings}>
-        {sliderProject}
+        {sliderProjects}
       </Slider>
       <Buttons>
         <button className="back" onClick={() => arrowRef.current.slickPrev()}>
