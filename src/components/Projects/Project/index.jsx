@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { StyledContainer } from "./style";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StyledContainer } from './style';
 
 const Project = ({ item }) => {
   const { img, disc, link } = item;
   return (
-    <StyledContainer className="project">
-      <img src={img} alt="project" />
-      <div className="disc">
+    <StyledContainer className='project'>
+      <img src={img} alt='project' />
+      <div className='disc'>
         <h1>{disc}</h1>
         <p>
-          <a href={link} target="_blank" rel="noopener noreferrer">
+          <a href={link} target='_blank' rel='noopener noreferrer'>
             Demo
           </a>
         </p>

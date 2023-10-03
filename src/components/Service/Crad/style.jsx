@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
   width: 100%;
@@ -10,7 +10,7 @@ export const StyledContainer = styled.div`
     font-size: 0.8rem;
     transition: transform 0.4s ease-in-out; /* Apply transition to the entire card */
     &:hover {
-      transform: scale(1.2); 
+      transform: scale(1.2);
     }
   }
   span {

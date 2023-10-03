@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
   width: 80%;
@@ -31,17 +31,13 @@ export const StyledContainer = styled.div`
   }
 
   .slick-dots li button:before {
-    content: " ";
+    content: ' ';
   }
 
   .slick-dots li button {
     width: 9px;
     height: 4px;
-    background: linear-gradient(
-      159deg,
-      rgb(45, 45, 58) 0%,
-      rgb(43, 43, 53) 100%
-    );
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
     padding: 0.1rem;
     margin-top: 1rem;
     border-radius: 50px;

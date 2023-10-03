@@ -1,7 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div``;
-
 
 export const Banner = styled.div`
   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
@@ -43,7 +42,7 @@ export const StyleContainer = styled.div`
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: ${(props) => (props.bar ? "transparent" : "#fff")};
+        background-color: ${props => (props.bar ? 'transparent' : '#fff')};
         transition: transform 0.2s ease-in-out,
           background-color 0.2s ease-in-out;
 
@@ -58,15 +57,13 @@ export const StyleContainer = styled.div`
         }
 
         &:before {
-          transform: ${(props) =>
-            props.bar ? "rotate(45deg)" : "translateY(10px)"};
+          transform: ${props => (props.bar ? 'rotate(45deg)' : 'translateY(10px)')};
           transition: transform 0.2s ease-in-out,
             background-color 0.2s ease-in-out;
         }
 
         &:after {
-          transform: ${(props) =>
-            props.bar ? "rotate(-45deg)" : "translateY(-10px)"};
+          transform: ${props => (props.bar ? 'rotate(-45deg)' : 'translateY(-10px)')};
           transition: transform 0.2s ease-in-out,
             background-color 0.2s ease-in-out;
         }
@@ -103,8 +100,10 @@ export const Nav = styled.div`
     font-size: 2rem;
     gap: 2rem;
     font-weight: 700;
-    height: ${(props) => (props.bar ? "100vh" : "0")};
-    transition: height 0.4s ease-in-out, background-color 0.2s ease-in-out;
+    height: ${props => (props.bar ? '100vh' : '0')};
+    transition:
+      height 0.4s ease-in-out,
+      background-color 0.2s ease-in-out;
     overflow: hidden;
     z-index: 99;
   }
@@ -117,7 +116,7 @@ export const Nav = styled.div`
       font-weight: 400;
       position: relative;
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         width: 100%;
         height: 2px;
@@ -139,4 +138,3 @@ export const Nav = styled.div`
     }
   }
 `;
-

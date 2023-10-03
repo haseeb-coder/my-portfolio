@@ -1,41 +1,41 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 
-import Slider from "react-slick";
-import client from "../../../assets/images/client.png";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import Slider from 'react-slick';
+import client from '../../../assets/images/client.png';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-import { StyledContainer, Testimonials, Buttonse } from "./style";
+import { StyledContainer, Testimonials, Buttonse } from './style';
 
-import ClientSlider from "./ClientSlider";
+import ClientSlider from './ClientSlider';
 
 let clients = [
   {
-    name: "John",
-    position: "Business Analytics",
+    name: 'John',
+    position: 'Business Analytics',
     img: client,
     stars: 3,
-    disc: "Awesome work done by Haseeb",
+    disc: 'Awesome work done by Haseeb',
   },
   {
-    name: "John",
-    position: "Salesforce",
+    name: 'John',
+    position: 'Salesforce',
     img: client,
     stars: 4,
-    disc: "Awesome work done by Haseeb",
+    disc: 'Awesome work done by Haseeb',
   },
   {
-    name: "John",
-    position: "",
+    name: 'John',
+    position: '',
     img: client,
     stars: 5,
-    disc: "Awesome work done by Haseeb",
+    disc: 'Awesome work done by Haseeb',
   },
   {
-    name: "John",
-    position: "",
+    name: 'John',
+    position: '',
     img: client,
     stars: 3,
-    disc: "Awesome work done by Haseeb",
+    disc: 'Awesome work done by Haseeb',
   },
 ];
 
@@ -77,11 +77,11 @@ var settings = {
 
 const Clients = () => {
   const arrowRef = useRef(null);
-  let clientsDic = "";
+  let clientsDic = '';
   clientsDic = clients.map((item, i) => <ClientSlider item={item} key={i} />);
   return (
     <StyledContainer>
-      <span className="green">testimonials</span>
+      <span className='green'>testimonials</span>
       <h1>what clients say</h1>
       <Testimonials>
         <Slider ref={arrowRef} {...settings}>

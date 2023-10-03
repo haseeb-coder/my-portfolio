@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { StyledContainer } from "./style";
-const Card = (props) => {
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StyledContainer } from './style';
+const Card = props => {
   const { Icon, disc, title } = props;
 
   return (
     <StyledContainer>
-      <div className="content">
-        <span className="green">
+      <div className='content'>
+        <span className='green'>
           <Icon />
         </span>
         <h1>{title}</h1>

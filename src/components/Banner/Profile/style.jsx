@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyleContainer = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ export const Texts = styled.div`
   }
   h1 {
     font-size: 2rem;
-    font-family: "Secular One", sans-serif;
+    font-family: 'Secular One', sans-serif;
     letter-spacing: 2px;
   }
   h3 {

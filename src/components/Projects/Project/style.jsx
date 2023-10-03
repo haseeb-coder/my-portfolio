@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
   height: 12.5rem;
@@ -33,7 +33,7 @@ export const StyledContainer = styled.div`
       font-size: 0.8rem;
       a {
         margin-left: 0.4rem;
-        color: #001AF9;
+        color: #001af9;
       }
     }
   }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Project = styled.div`
   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
@@ -21,9 +21,8 @@ export const StyledContainer = styled.div`
     padding: 1rem 0;
     font-size: 0.9rem;
 
-    @media (max-width: 500px){
-      width: 90%
-
+    @media (max-width: 500px) {
+      width: 90%;
     }
   }
 `;

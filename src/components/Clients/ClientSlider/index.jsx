@@ -1,22 +1,22 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { IoIosQuote } from "react-icons/io";
-import { AiOutlineStar } from "react-icons/ai";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { IoIosQuote } from 'react-icons/io';
+import { AiOutlineStar } from 'react-icons/ai';
 
-import { StyledContainer, HeaderStyle ,Body,Footer} from "./style";
+import { StyledContainer, HeaderStyle, Body, Footer } from './style';
 
 const ClientSlider = ({ item }) => {
   const { name, stars, img, disc, position } = item;
   return (
     <StyledContainer>
       <HeaderStyle>
-        <span className="quote">
+        <span className='quote'>
           <IoIosQuote />
         </span>
         {Array(stars)
           .fill()
           .map((_, i) => (
-            <span className="star" key={i}>
+            <span className='star' key={i}>
               <AiOutlineStar />
             </span>
           ))}
@@ -24,7 +24,7 @@ const ClientSlider = ({ item }) => {
       <Body>{disc}</Body>
       <Footer>
         <img src={img} alt={name} />
-        <div className="details">
+        <div className='details'>
           <h1>{name}</h1>
           <p>{position}</p>
         </div>
@@ -44,5 +44,3 @@ ClientSlider.propTypes = {
 };
 
 export default ClientSlider;
-
-

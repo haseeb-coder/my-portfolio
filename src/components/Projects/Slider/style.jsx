@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-
+import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
   position: relative;
@@ -12,7 +10,7 @@ export const Buttons = styled.div`
   button {
     width: 2rem;
     height: 2rem;
-    background-color: #02B08D;
+    background-color: #02b08d;
     cursor: pointer;
     color: rgba(255, 255, 255, 100);
     border: none;
