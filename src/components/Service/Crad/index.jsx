@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { StyledContainer } from './style';
 const Card = props => {
   const { Icon, disc, title } = props;

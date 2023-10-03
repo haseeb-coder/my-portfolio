@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyleContainer = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: 35rem;
   padding-top: 3rem;
   width: 80%;
   max-width: 1280px;

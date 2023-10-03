@@ -15,19 +15,19 @@ const Header = () => {
       </Logo>
       <Nav bar={bar}>
         <span>
-          <a href='#'>Home</a>
+          <a href='#home'>Home</a>
         </span>
         <span>
-          <a href='#'>Services</a>
+          <a href='#service'>Services</a>
         </span>
         <span>
-          <a href='#'>Testominals</a>
+          <a href='#client'>Testominals</a>
         </span>
         <span>
-          <a href='#'>Projects</a>
+          <a href='#project'>Projects</a>
         </span>
         <span>
-          <a href='#'>Portfolio</a>
+          <a href='#footer'>Contact</a>
         </span>
       </Nav>
       <div className='bars' onClick={() => setBar(!bar)}>

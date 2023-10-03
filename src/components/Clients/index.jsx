@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
-
+import { Slide } from 'react-awesome-reveal';
 import Slider from 'react-slick';
-import client from '../../../assets/images/client.png';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-import { StyledContainer, Testimonials, Buttonse } from './style';
+import client from '../../../assets/images/client.png';
 
+import { StyledContainer, Testimonials, Buttonse } from './style';
 import ClientSlider from './ClientSlider';
 
 let clients = [
@@ -80,9 +80,12 @@ const Clients = () => {
   let clientsDic = '';
   clientsDic = clients.map((item, i) => <ClientSlider item={item} key={i} />);
   return (
-    <StyledContainer>
-      <span className='green'>testimonials</span>
-      <h1>what clients say</h1>
+    <StyledContainer id='client'>
+      <Slide direction='left'>
+        <span className='green'>testimonials</span>
+        <h1>what clients say</h1>
+      </Slide>
+
       <Testimonials>
         <Slider ref={arrowRef} {...settings}>
           {clientsDic}

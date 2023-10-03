@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 :root {
   --lighter: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
@@ -49,4 +50,22 @@ body {
     opacity: 1;
     pointer-events: all;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 50px;
+  background: #888;
+
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #555;
 }

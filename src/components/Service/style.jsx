@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
+  margin-top: 4rem;
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
@@ -13,8 +14,9 @@ export const StyledContainer = styled.div`
   }
 `;
 export const Cards = styled.div`
+  
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   margin-top: 4rem;
   gap: 1.2rem;
 `;
