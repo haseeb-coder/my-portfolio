@@ -11,7 +11,7 @@ const Card = props => {
         <span className='green'>
           <Icon />
         </span>
-        <h1>{title}</h1>
+        <h1 className='green'>{title}</h1>
         <p>{disc}</p>
       </div>
     </StyledContainer>

@@ -7,12 +7,7 @@ export const StyledContainer = styled.div`
   padding: 1rem;
   text-align: center;
   cursor: pointer;
-  .content {
-    transition: transform 0.4s ease-in-out; /* Apply transition to the entire card */
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
+ 
   span {
     font-size: 4rem;
   }
