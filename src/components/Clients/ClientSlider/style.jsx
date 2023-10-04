@@ -30,7 +30,7 @@ export const Footer = styled.p`
   align-items: center;
   gap: 1rem;
   img {
-    width: 4rem;
+    width: 5rem;
     border-radius: 50px;
   }
   h1 {

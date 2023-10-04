@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyleContainer = styled.div`
   display: flex;
-  gap: 35rem;
+  gap: 2.5rem;
   padding-top: 3rem;
   width: 80%;
   max-width: 1280px;
@@ -10,12 +10,13 @@ export const StyleContainer = styled.div`
   @media (max-width: 840px) {
     width: 90%;
   }
+  
   @media (max-width: 640px) {
     flex-direction: column;
   }
 `;
 
-export const Texts = styled.div`
+export const Texts = styled.div`7
   flex: 1;
   h4 {
     padding: 1rem 0;
@@ -58,7 +59,7 @@ export const Social = styled.div`
   p {
     font-size: 0.9rem;
     @media (max-width: 690px) {
-      font-size: 0.7rem;
+      font-size: 0.6rem;
     }
   }
   .social-icons {
@@ -88,11 +89,11 @@ export const Social = styled.div`
 
 export const Profile = styled.div`
   img {
-    width: 25rem;
+    width: 22rem;
     filter: drop-shadow(0px 10px 10px #01be9551);
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
-      width: 20rem;
+      width: 18rem;
     }
     @media (max-width: 660px) {
       width: 18rem;

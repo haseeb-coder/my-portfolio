@@ -9,7 +9,7 @@ import { StyledContainer, Cards } from './style';
 
 const Services = () => {
   return (
-    <StyledContainer id='services'>
+    <StyledContainer id='service'>
       <Slide direction='down'>
         <h4>
           My <span className='green'>Services</span>

@@ -23,7 +23,9 @@ const ProfileComponent = () => {
             complex problems. With a proven track record of designing and developing cutting-edge software solutions, I
             bring a dynamic blend of technical expertise and creativity to every project I undertake.
           </p>
-          <button>Lets talk</button>
+          <a href='#contact'>
+            <button>Lets talk</button>
+          </a>
           <Social>
             <p>Check out my</p>
             <div className='social-icons'>
