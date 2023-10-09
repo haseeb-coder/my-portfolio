@@ -17,7 +17,7 @@ export const StyleContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  padding-lef: 0.25rem
+  padding-left: 0.25rem
   margin: 0 auto;
   width: 80%;
   .bars{
@@ -37,6 +37,7 @@ export const StyleContainer = styled.div`
       justify-content: center;
       padding: 0.5rem;
       z-index: 100;
+      overflow: hidden;
 
       .bar {
         position: absolute;

@@ -5,6 +5,10 @@ import { StyleContainer, Logo, Nav } from './style';
 
 const Header = () => {
   const [bar, setBar] = useState(false);
+  const handleBarClick = () => {
+    setBar(!bar);
+    
+  };
   return (
     <StyleContainer bar={bar}>
       <Logo>
@@ -30,7 +34,7 @@ const Header = () => {
           <a href='#contact'>Contact</a>
         </span>
       </Nav>
-      <div className='bars' onClick={() => setBar(!bar)}>
+      <div className='bars' onClick={handleBarClick}>
         <div className='bar' />
       </div>
     </StyleContainer>
