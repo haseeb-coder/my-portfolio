@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0f;
+  --foreground: #e7e7ee;
+  --muted: #9a9ab0;
+  --card: #12121a;
+  --border: #23232f;
+  --accent-from: #7c3aed; /* violet */
+  --accent-to: #2563eb; /* blue */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent-from), var(--accent-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgba(18, 18, 26, 0.6);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
