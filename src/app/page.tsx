@@ -12,7 +12,7 @@ import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="grain">
       <ThemeBackground />
       <Navbar />
       <main>
@@ -26,6 +26,6 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

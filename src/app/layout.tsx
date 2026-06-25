@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { site } from "@/data/site";
+import { SmoothScroll } from "@/components/shared/SmoothScroll";
+import { ScrollProgress } from "@/components/shared/ScrollProgress";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-display",
+});
 
 const SITE_URL = "https://haseeb-ur-rehman-portfolio.netlify.app";
 const DESCRIPTION =
@@ -80,13 +86,17 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`dark ${inter.variable}`}>
+    <html
+      lang="en"
+      className={`dark ${inter.variable} ${spaceGrotesk.variable}`}
+    >
       <body className="font-sans antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {children}
+        <ScrollProgress />
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
