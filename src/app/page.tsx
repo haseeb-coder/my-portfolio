@@ -1,7 +1,17 @@
+import { ThemeBackground } from "@/components/shared/ThemeBackground";
+import { Navbar } from "@/components/shared/Navbar";
+import { Hero } from "@/components/sections/Hero";
+import { ValueStrip } from "@/components/sections/ValueStrip";
+
 export default function Home() {
   return (
-    <main className="grid min-h-screen place-items-center">
-      <h1 className="gradient-text text-4xl font-bold">Portfolio coming up</h1>
-    </main>
+    <>
+      <ThemeBackground />
+      <Navbar />
+      <main>
+        <Hero />
+        <ValueStrip />
+      </main>
+    </>
   );
 }
