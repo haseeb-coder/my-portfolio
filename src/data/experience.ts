@@ -46,10 +46,10 @@ export const experience: Experience[] = [
       {
         name: "YapIt Marketing Hub (Alvo Marketing)",
         summary:
-          "AI marketing platform that turns any business URL into a launched ad campaign.",
+          "AI marketing platform (live at alvo.marketing) that turns any business link into a launched ad campaign.",
         bullets: [
-          "Built Next.js 16 platform generating ad strategy, copy, and creative via LLMs (DigitalOcean Inference + Gemini) in a 5-step wizard",
-          "Engineered a Trigger.dev v4 background pipeline with Jina Reader scraping and a multilingual (i18n) marketing site",
+          "Built Next.js 16 platform that turns any business link into a full ad campaign — copy, creative, and audience targeting across 100+ channels in ~3 minutes",
+          "Generated content via LLMs (DigitalOcean Inference + Gemini); engineered a Trigger.dev v4 background pipeline with Jina Reader scraping and a multilingual (i18n) site",
           "Launches posts and ads via the YapIt Ads API; media served from DigitalOcean Spaces CDN",
         ],
         stack: [

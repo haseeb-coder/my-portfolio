@@ -17,18 +17,18 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "yapit",
-    title: "YapIt Marketing Hub",
+    title: "Alvo — AI Marketing Platform",
     category: "AI",
     ai: true,
     problem:
-      "Small merchants lack the time and expertise to plan and launch effective ad campaigns.",
+      "Small merchants lack the time and expertise to plan, design, and launch effective ad campaigns.",
     solution:
-      "Next.js 16 platform that scrapes any business URL and uses LLMs to auto-generate ad strategy, copy, and images, then launches the ads — all in a 5-step wizard.",
+      "Next.js 16 platform (YapIt Marketing Hub) that turns any business link into a complete ad campaign — auto-generating copy, creative, and audience targeting across 100+ marketing channels in ~3 minutes via an LLM pipeline.",
     impact: [
-      "5-step URL-to-launched-ad wizard",
-      "AI text + image generation (Gemini, DO Inference)",
+      "Any URL → full campaign in ~3 min",
+      "AI copy + creative + targeting",
+      "100+ marketing channels",
       "Trigger.dev background pipeline",
-      "Multilingual marketing site",
     ],
     stack: [
       "Next.js 16",
@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "Gemini",
       "shadcn/ui",
     ],
-    link: "https://business.yapit.app",
+    link: "https://alvo.marketing/en",
   },
   {
     slug: "gid",
