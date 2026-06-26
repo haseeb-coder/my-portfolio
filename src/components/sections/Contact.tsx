@@ -51,7 +51,12 @@ export function Contact() {
   return (
     <section id="contact" className="scroll-mt-20 py-20">
       <Container>
-        <SectionHeading eyebrow="Contact" title="Let's Build" accent="Together" />
+        <SectionHeading
+          index="06"
+          eyebrow="Contact"
+          title="Let's Build"
+          accent="Together"
+        />
         <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
           {/* Direct contact */}
           <div className="space-y-4">
@@ -62,22 +67,22 @@ export function Contact() {
             <div className="space-y-3">
               <a
                 href={`mailto:${site.email}`}
-                className="glass flex items-center gap-3 rounded-xl p-4 transition hover:border-violet-500/40"
+                className="glass flex items-center gap-3 rounded-xl p-4 transition hover:border-indigo-500/40"
               >
-                <Mail className="h-5 w-5 text-violet-400" />
+                <Mail className="h-5 w-5 text-indigo-400" />
                 <span className="text-sm">{site.email}</span>
               </a>
               <a
                 href={`https://wa.me/${site.whatsapp}`}
                 target="_blank"
                 rel="noreferrer"
-                className="glass flex items-center gap-3 rounded-xl p-4 transition hover:border-violet-500/40"
+                className="glass flex items-center gap-3 rounded-xl p-4 transition hover:border-indigo-500/40"
               >
                 <FaWhatsapp className="h-5 w-5 text-green-400" />
                 <span className="text-sm">WhatsApp: {site.phone}</span>
               </a>
               <div className="glass flex items-center gap-3 rounded-xl p-4">
-                <MapPin className="h-5 w-5 text-violet-400" />
+                <MapPin className="h-5 w-5 text-indigo-400" />
                 <span className="text-sm">
                   {site.location} · {site.available}
                 </span>
@@ -87,7 +92,7 @@ export function Contact() {
               <a
                 href={site.cvPath}
                 download
-                className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium transition hover:border-violet-500/50"
+                className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium transition hover:border-indigo-500/50"
               >
                 <Download className="h-4 w-4" /> Download CV
               </a>
@@ -96,7 +101,7 @@ export function Contact() {
                   href={site.calendly}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90"
+                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-cyan-600 px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90"
                 >
                   <CalendarClock className="h-4 w-4" /> Book a Call
                 </a>
@@ -117,7 +122,7 @@ export function Contact() {
                 <button
                   type="button"
                   onClick={() => setStatus("idle")}
-                  className="mt-6 text-sm text-violet-300 hover:text-violet-200"
+                  className="mt-6 text-sm text-indigo-300 hover:text-indigo-200"
                 >
                   Send another message
                 </button>
@@ -172,7 +177,7 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-blue-600 px-6 py-3 font-medium text-white transition hover:opacity-90 disabled:opacity-60"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-cyan-600 px-6 py-3 font-medium text-white transition hover:opacity-90 disabled:opacity-60"
                 >
                   {status === "loading" ? (
                     "Sending…"

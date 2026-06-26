@@ -42,7 +42,7 @@ export function Navbar() {
               className="group relative text-sm text-zinc-400 transition hover:text-white"
             >
               {label}
-              <span className="absolute -bottom-1 left-0 h-px w-0 bg-gradient-to-r from-violet-500 to-blue-500 transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-gradient-to-r from-indigo-500 to-cyan-500 transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </nav>
@@ -50,7 +50,7 @@ export function Navbar() {
           <a
             href={site.cvPath}
             download
-            className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 md:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-cyan-600 px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 md:inline-flex"
           >
             <Download className="h-4 w-4" /> Resume
           </a>
@@ -79,7 +79,7 @@ export function Navbar() {
             <a
               href={site.cvPath}
               download
-              className="inline-flex items-center gap-2 font-medium text-violet-300"
+              className="inline-flex items-center gap-2 font-medium text-indigo-300"
             >
               <Download className="h-4 w-4" /> Download Resume
             </a>

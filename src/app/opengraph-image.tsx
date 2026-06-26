@@ -19,7 +19,7 @@ export default function OpengraphImage() {
           padding: "80px",
           background: "#0a0a0f",
           backgroundImage:
-            "radial-gradient(circle at 20% 20%, rgba(124,58,237,0.45), transparent 45%), radial-gradient(circle at 85% 80%, rgba(37,99,235,0.4), transparent 45%)",
+            "radial-gradient(circle at 20% 20%, rgba(79,70,229,0.45), transparent 45%), radial-gradient(circle at 85% 80%, rgba(6,182,212,0.4), transparent 45%)",
         }}
       >
         <div style={{ display: "flex", color: "#22c55e", fontSize: 28 }}>
@@ -40,7 +40,7 @@ export default function OpengraphImage() {
             fontSize: 40,
             fontWeight: 700,
             marginTop: 12,
-            background: "linear-gradient(90deg,#a78bfa,#60a5fa)",
+            background: "linear-gradient(90deg,#818cf8,#67e8f9)",
             backgroundClip: "text",
             color: "transparent",
           }}

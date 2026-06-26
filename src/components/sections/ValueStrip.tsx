@@ -41,7 +41,7 @@ export function ValueStrip() {
               transition={{ duration: 0.4, delay: i * 0.08 }}
               className="glass rounded-2xl p-5"
             >
-              <v.icon className="h-7 w-7 text-violet-400" />
+              <v.icon className="h-7 w-7 text-indigo-400" />
               <h3 className="mt-3 font-semibold">{v.title}</h3>
               <p className="mt-1 text-sm text-zinc-400">{v.desc}</p>
             </motion.div>

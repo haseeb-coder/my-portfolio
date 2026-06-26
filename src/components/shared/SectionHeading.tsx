@@ -15,9 +15,9 @@ export function SectionHeading({
   return (
     <div className={`mb-12 flex flex-col ${alignment}`}>
       {(index || eyebrow) && (
-        <p className="mb-3 flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-violet-400">
-          {index && <span className="text-violet-500/70">{index}</span>}
-          {index && eyebrow && <span className="h-px w-8 bg-violet-500/40" />}
+        <p className="mb-3 flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-indigo-400">
+          {index && <span className="text-indigo-500/70">{index}</span>}
+          {index && eyebrow && <span className="h-px w-8 bg-indigo-500/40" />}
           {eyebrow}
         </p>
       )}

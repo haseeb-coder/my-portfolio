@@ -6,8 +6,8 @@
 /* ---- AI-dark theme (always-on dark) ---- */
 :root {
   --radius: 0.625rem;
-  --accent-from: #7c3aed; /* violet */
-  --accent-to: #2563eb; /* blue */
+  --accent-from: #4f46e5; /* violet */
+  --accent-to: #06b6d4; /* blue */
 
   --background: #0a0a0f;
   --foreground: #e7e7ee;
@@ -15,7 +15,7 @@
   --card-foreground: #e7e7ee;
   --popover: #12121a;
   --popover-foreground: #e7e7ee;
-  --primary: #7c3aed;
+  --primary: #4f46e5;
   --primary-foreground: #ffffff;
   --secondary: #1a1a26;
   --secondary-foreground: #e7e7ee;
@@ -26,7 +26,7 @@
   --destructive: #ef4444;
   --border: rgba(255, 255, 255, 0.08);
   --input: rgba(255, 255, 255, 0.12);
-  --ring: #7c3aed;
+  --ring: #4f46e5;
 }
 
 /* Keep .dark identical so shadcn's dark-variant utilities also resolve correctly */
@@ -37,7 +37,7 @@
   --card-foreground: #e7e7ee;
   --popover: #12121a;
   --popover-foreground: #e7e7ee;
-  --primary: #7c3aed;
+  --primary: #4f46e5;
   --primary-foreground: #ffffff;
   --secondary: #1a1a26;
   --secondary-foreground: #e7e7ee;
@@ -48,7 +48,7 @@
   --destructive: #ef4444;
   --border: rgba(255, 255, 255, 0.08);
   --input: rgba(255, 255, 255, 0.12);
-  --ring: #7c3aed;
+  --ring: #4f46e5;
 }
 
 @theme inline {
@@ -118,8 +118,8 @@ html {
   transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card-modern:hover {
-  border-color: rgba(124, 58, 237, 0.5);
-  box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.2), 0 20px 50px -20px rgba(124, 58, 237, 0.35);
+  border-color: rgba(79, 70, 229, 0.5);
+  box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.2), 0 20px 50px -20px rgba(79, 70, 229, 0.35);
 }
 
 /* Fine film grain overlay */

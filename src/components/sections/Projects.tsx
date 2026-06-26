@@ -23,9 +23,14 @@ export function Projects() {
       : projects.filter((p) => p.category === active);
 
   return (
-    <section id="projects" className="scroll-mt-20 py-20">
+    <section id="projects" className="scroll-mt-24 py-24">
       <Container>
-        <SectionHeading eyebrow="Portfolio" title="Featured" accent="Projects" />
+        <SectionHeading
+          index="04"
+          eyebrow="Portfolio"
+          title="Featured"
+          accent="Projects"
+        />
 
         <div className="mb-8 flex flex-wrap justify-center gap-2">
           {filters.map((f) => (
@@ -34,7 +39,7 @@ export function Projects() {
               onClick={() => setActive(f)}
               className={`rounded-full border px-4 py-1.5 text-sm transition ${
                 active === f
-                  ? "border-violet-500 bg-violet-500/15 text-violet-200"
+                  ? "border-indigo-500 bg-indigo-500/15 text-indigo-200"
                   : "border-border text-zinc-400 hover:text-white"
               }`}
             >
@@ -48,7 +53,7 @@ export function Projects() {
           className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           <AnimatePresence mode="popLayout">
-            {visible.map((project) => (
+            {visible.map((project, i) => (
               <motion.div
                 key={project.slug}
                 layout
@@ -56,8 +61,9 @@ export function Projects() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.96 }}
                 transition={{ duration: 0.25 }}
+                style={{ perspective: 1000 }}
               >
-                <ProjectCard project={project} />
+                <ProjectCard project={project} index={i} />
               </motion.div>
             ))}
           </AnimatePresence>

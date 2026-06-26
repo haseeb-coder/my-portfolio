@@ -44,7 +44,7 @@ export function Hero() {
             </h1>
 
             <div className="mt-4 flex h-9 items-center justify-center gap-2 text-xl font-semibold sm:text-2xl lg:justify-start">
-              <Sparkles className="h-5 w-5 text-violet-400" />
+              <Sparkles className="h-5 w-5 text-indigo-400" />
               <AnimatePresence mode="wait">
                 <motion.span
                   key={roleIdx}
@@ -66,14 +66,14 @@ export function Hero() {
             <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
               <MagneticButton
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-blue-600 px-6 py-3 font-medium text-white shadow-[0_8px_30px_-8px_rgba(124,58,237,0.6)] transition hover:opacity-90"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-cyan-600 px-6 py-3 font-medium text-white shadow-[0_8px_30px_-8px_rgba(79,70,229,0.6)] transition hover:opacity-90"
               >
                 Hire Me <ArrowRight className="h-4 w-4" />
               </MagneticButton>
               <MagneticButton
                 href={site.cvPath}
                 download
-                className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 font-medium transition hover:border-violet-500/50"
+                className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 font-medium transition hover:border-indigo-500/50"
               >
                 <Download className="h-4 w-4" /> Download CV
               </MagneticButton>
@@ -89,7 +89,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="relative mx-auto w-64 sm:w-80 lg:w-full lg:max-w-sm"
           >
-            <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-violet-600/40 to-blue-600/40 blur-2xl" />
+            <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-indigo-600/40 to-cyan-600/40 blur-2xl" />
             <div className="relative aspect-square overflow-hidden rounded-full border-2 border-white/10 bg-card p-1.5">
               <div className="relative h-full w-full overflow-hidden rounded-full">
                 <Image

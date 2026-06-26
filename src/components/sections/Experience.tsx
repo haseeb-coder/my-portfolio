@@ -10,9 +10,14 @@ export function Experience() {
   return (
     <section id="experience" className="scroll-mt-20 py-20">
       <Container>
-        <SectionHeading eyebrow="Career" title="Work" accent="Experience" />
+        <SectionHeading
+          index="03"
+          eyebrow="Career"
+          title="Work"
+          accent="Experience"
+        />
         <div className="relative">
-          <div className="absolute left-3 top-2 bottom-2 w-px bg-gradient-to-b from-violet-500/60 to-blue-500/10 md:left-4" />
+          <div className="absolute left-3 top-2 bottom-2 w-px bg-gradient-to-b from-indigo-500/60 to-cyan-500/10 md:left-4" />
           <div className="space-y-12">
             {experience.map((job, i) => (
               <motion.div
@@ -26,7 +31,7 @@ export function Experience() {
                 <span
                   className={`absolute left-0 top-1.5 h-6 w-6 rounded-full border-2 md:left-1 ${
                     job.current
-                      ? "border-violet-400 bg-violet-500 shadow-[0_0_16px_rgba(124,58,237,0.7)]"
+                      ? "border-indigo-400 bg-indigo-500 shadow-[0_0_16px_rgba(79,70,229,0.7)]"
                       : "border-zinc-600 bg-background"
                   }`}
                 />
@@ -62,7 +67,7 @@ export function Experience() {
                             key={b}
                             className="flex gap-2 text-sm text-zinc-300"
                           >
-                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400" />
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-400" />
                             {b}
                           </li>
                         ))}

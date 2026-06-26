@@ -10,8 +10,8 @@ function escapeHtml(s: string): string {
     .replace(/'/g, "&#39;");
 }
 
-const BRAND_FROM = "#7c3aed";
-const BRAND_TO = "#2563eb";
+const BRAND_FROM = "#4f46e5";
+const BRAND_TO = "#06b6d4";
 
 /** Internal notification sent to Haseeb. */
 export function notifyHtml(input: ContactInput): string {
@@ -27,7 +27,7 @@ export function notifyHtml(input: ContactInput): string {
       </div>
       <table style="width:100%;border-collapse:collapse;padding:24px" cellpadding="8">
         <tr><td style="color:#9a9ab0;width:90px">Name</td><td style="color:#fff">${name}</td></tr>
-        <tr><td style="color:#9a9ab0">Email</td><td><a style="color:#a78bfa" href="mailto:${email}">${email}</a></td></tr>
+        <tr><td style="color:#9a9ab0">Email</td><td><a style="color:#818cf8" href="mailto:${email}">${email}</a></td></tr>
         <tr><td style="color:#9a9ab0">Subject</td><td style="color:#fff">${subject}</td></tr>
         <tr><td style="color:#9a9ab0;vertical-align:top">Message</td><td style="color:#e7e7ee">${message}</td></tr>
       </table>
@@ -55,8 +55,8 @@ export function autoReplyHtml(input: ContactInput): string {
           In the meantime, feel free to explore my work or grab my CV below.
         </p>
         <div style="text-align:center;margin:24px 0">
-          <a href="${site.social.github}" style="display:inline-block;margin:0 6px;color:#a78bfa;text-decoration:none">GitHub</a>
-          <a href="${site.social.linkedin}" style="display:inline-block;margin:0 6px;color:#a78bfa;text-decoration:none">LinkedIn</a>
+          <a href="${site.social.github}" style="display:inline-block;margin:0 6px;color:#818cf8;text-decoration:none">GitHub</a>
+          <a href="${site.social.linkedin}" style="display:inline-block;margin:0 6px;color:#818cf8;text-decoration:none">LinkedIn</a>
         </div>
         <p style="margin:24px 0 0;color:#9a9ab0;font-size:13px">
           — ${escapeHtml(site.name)}<br/>
