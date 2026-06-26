@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-display",
 });
 
-const SITE_URL = "https://haseeb-ur-rehman-portfolio.netlify.app";
+const SITE_URL = "https://haseeb-ur-rehman-siddique.vercel.app";
 const DESCRIPTION =
   "AI-Augmented Full-Stack Software Engineer with 4+ years building scalable web apps, ERP systems, and AI platforms for international clients. Node.js, NestJS, Next.js, TypeScript, AWS, OpenAI & Claude AI. Open to remote worldwide.";
 
